@@ -11,3 +11,261 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1{
+  font-family: 'Orbitron', sans-serif;
+  background-color: rgba(80,97,138, 0.6);
+  text-align: center;
+  color: white;
+}
+
+h2{
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color : white;
+
+}
+
+h3{
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color : #631B0C;
+}
+
+/* app */
+
+.App{
+
+  width: 1080px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Vista del menu */
+.menu{
+  width: 100%;
+  height: 450px;
+  border: 5px solid #000;
+  margin: auto;
+  background-image: url("assets/fondo/menu.png");
+  display: block;
+}
+
+.menu_button{
+  margin-top: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+
+}
+
+#arrows{
+  background-size: 60px 50px;
+  height: 50px;  
+  width: 65px;
+  background-color: rgba(162, 162, 162, 0.5);
+  position: relative;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/724/724802.png");
+}
+
+.personaje{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+/* Vista del juego */
+.game{
+  width: 100%;
+  height: 450px;
+  border: 5px solid #000;
+  margin: auto;
+  background-image: url("assets/fondo/juego.gif");
+  display: none;
+}
+
+#back{
+  margin-top: 0px;
+  top: 0cm;
+}
+
+.audio{
+  display: none;
+}
+
+
+#ing{
+  width: 150px;
+  height: 150px;
+  background-size: 150px 150px;
+  position: relative;
+  top: 275px;
+  background-image: none;
+  margin-left: 0%;
+}
+
+.jump{
+  animation: jump 0.5s linear;
+  filter: hue-rotate(90deg);
+}
+@keyframes jump {
+  0% {
+      top: 250px;
+  }
+  30% {
+      top: 200px;
+  }
+  50% {
+      top: 150px;
+  }
+  80% {
+      top: 200px;
+  }
+  100% {
+      top: 250px;
+  }
+
+}
+
+#personaje_final{
+  margin-top: 80px;
+}
+
+.prefestejo{
+  animation: prefestejo 1s linear;
+}
+
+@keyframes prefestejo {
+
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 110%;
+  }
+
+}
+
+.festejo{
+  animation: festejo 0.3s;
+  animation-iteration-count: 5;
+}
+
+@keyframes festejo {
+  0% {
+      bottom: 0px;
+  }
+  30% {
+      bottom: 50px;
+  }
+  50% {
+      bottom: 70px;
+  }
+  80% {
+      bottom: 50px;
+  }
+  100% {
+      bottom: 0px;
+  }
+
+}
+
+#personaje_perdio{
+  transform: rotate(-90deg);
+  filter: hue-rotate(180deg);
+  margin-top: 80px;
+}
+
+
+.fall {
+  animation: fall 0.5s linear;
+  filter: hue-rotate(180deg);
+}
+
+@keyframes fall {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+  from{
+    transform: rotate(-90deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+
+/* vista de preguntas */
+
+.questions{
+  width: 100%;
+  border: 5px solid #000;
+  margin: auto;
+  display: none;
+}
+
+span {
+  font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', 'Symbola', 'Quivira';
+  content: "\2764";
+}
+
+.option{
+
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+}
+
+.radio{
+  transform: scale(2);
+  text-align: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+
+#progressBar{
+  width: 100%;
+  position: relative;
+  height: 50px;
+  color: #0F57A6
+}
+
+/* Gameover */
+
+.gameover{
+  width: 100%;
+  height: 450px;
+  border: 5px solid #000;
+  margin: auto;
+  background-image: url("assets/fondo/perdio.png");
+  display: none;
+}
+
+.win{
+  width: 100%;
+  height: 450px;
+  border: 5px solid #000;
+  margin: auto;
+  background-image: url("assets/fondo/menu.png");
+  display: none;
+}

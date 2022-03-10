@@ -1,0 +1,91 @@
+{
+    "1":{
+        "question": "La imagen de RM se crea gracias a reacciones magnéticas del cuerpo del paciente que generan una señal cualificable.",
+        
+        "answers": {
+            "a": "Verdadero",
+            "b": "Falso"
+        },
+
+        "answer": "a"
+
+    },
+
+    "2":{
+        "question": "Seleccione un electroiman.",
+
+        "answers": {
+            "a": "Neodimio",
+            "b": "Samario",
+            "c": "Resistivo"
+
+        },
+
+        "answer": "c"
+
+    },
+
+    "3":{
+        "question": "¿Cómo funciona una IRM?",
+
+        "answers": {
+            "a": "Las ondas de radiación de alta energía que pueden penetrar la mayoría de las sustancias muestran imágenes corporales internas.",
+            "b": "Un campo magnético y ondas radiales de frecuencia muy alta producen imágenes altamente detalladas.",
+            "c": "Las imágenes de radiografías se envían a una computadora que crea imágenes transversales.",
+            "d": "Las ondas de sonido de alta frecuencia producen imágenes de los órganos internos."
+        },
+
+        "answer": "b"
+
+    },
+
+    "4":{
+        "question": "Una de las principales ventajas de la resonancia magnética es:",
+
+        "answers": {
+
+            "a": "La facilidad con la que se actualiza o sustituye el equipo",
+            "b": "Su coste relativamente bajo, comparado con el de la tomografía computarizada",
+            "c": "No requiere una sala especializada",
+            "d": "La posibilidad de reposicionar la sección transversal a través del cuerpo sin reposicionar al paciente."
+        },
+
+        "answer": "d"
+    },
+
+    "5":{
+
+        "question": "A cuanto equivale 1 Tesla?",
+
+        "answers": {
+            "a": "1,000 Gauss",
+            "b": "10,000 Gauss",
+            "c": "10 Gauss"
+        },
+
+        "answer": "a"
+    },
+
+    "6":{
+        "question": "Cual elemento genera la señal de resonancia nuclear mas intensa?",
+
+        "answers": {
+            "a": "Hidrógeno",
+            "b": "Helio",
+            "c": "Carbono"
+        },
+
+        "answer": "a"
+    },
+
+    "7":{
+        "question": "Nombre al total de los espines del proton dentro de un voxel",
+
+        "answers": {
+            "a": "Estadistico de gran magnitud",
+            "b": "Conjunto"
+        },
+
+        "answer": "b"
+    }
+}
