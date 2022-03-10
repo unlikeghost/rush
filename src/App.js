@@ -333,7 +333,7 @@ function App() {
 
           <h2>Selecciona tu personaje</h2>
 
-          <img className="personaje" id="personaje" src={current} ></img>
+          <img className="personaje" id="personaje" src={current} alt="img del personaje"></img>
           
           <button className="menu_button" id="arrows" onClick={changeImage}> </button>
 
@@ -347,7 +347,7 @@ function App() {
 
         <button className="menu_button" id="back" onClick={jugar}> Menu </button>
         
-        <img className="personaje" id="ing" src={current} ></img>
+        <img className="personaje" id="ing" src={current} alt="img del personaje"></img>
 
       </div>
 
@@ -357,7 +357,7 @@ function App() {
 
         <div id="puntaje_over"></div>
 
-        <img className="personaje" id="personaje_perdio" src={current} ></img>
+        <img className="personaje" id="personaje_perdio" src={current} alt="img del personaje"></img>
 
         <button className="menu_button" onClick={showMenu}> Volver al menu </button>
       
@@ -369,7 +369,7 @@ function App() {
 
         <div id="puntaje_win"></div>
         
-        <img className="personaje" id="personaje_final" src={current} ></img>
+        <img className="personaje" id="personaje_final" src={current} alt="img del personaje"></img>
 
         <div id="boton_win"></div>
       </div>
