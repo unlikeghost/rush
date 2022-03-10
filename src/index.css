@@ -23,24 +23,23 @@ h2{
   font-family: 'Orbitron', sans-serif;
   text-align: center;
   color : white;
-
 }
 
 h3{
   font-family: 'Orbitron', sans-serif;
   text-align: center;
-  color : #631B0C;
+  color : black;
 }
 
 /* app */
 
 .App{
-
   width: 1080px;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: rgba(243, 241, 242, 0.8);
 }
 
 /* Vista del menu */
@@ -148,7 +147,7 @@ h3{
     margin-left: 0%;
   }
   to {
-    margin-left: 110%;
+    margin-left: 80%;
   }
 
 }
@@ -216,6 +215,7 @@ h3{
 span {
   font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', 'Symbola', 'Quivira';
   content: "\2764";
+  font-size: 25px;
 }
 
 .option{

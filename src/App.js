@@ -6,12 +6,19 @@ const questions_json = require('./assets/questions/questions.json');
 let current = hombre;
 let start = false;
 let vidas = 3;
-let numb_question = 1;
+let numb_question = 0;
 let puntos = 0;
+let total = Object.keys(questions_json).length; 
+
+// shuffle questions
+let random_keys = Array(total).fill().map((_, i) => i + 1).sort(() => .5 - Math.random());
 
 function App() {
 
+  console.log(random_keys);
+
   function changeImage() {
+    // Funcion para cambiar personaje
 
     if (current === hombre) {
 
@@ -25,9 +32,14 @@ function App() {
 
     document.getElementById("ing").src = current;
 
+    document.getElementById("personaje_final").src = current;
+
+    document.getElementById("personaje_perdio").src = current;
+
   }
 
   function jugar(){
+    // Funcion para iniciar el juego o mostrar el menu
 
     if(start === false){
 
@@ -41,6 +53,7 @@ function App() {
   }
 
   function showGame(){
+    // Funcion para mostrar el div game y questions
 
     document.getElementById("menu").style.display = 'none';
     document.getElementById("game").style.display = 'block';
@@ -54,6 +67,7 @@ function App() {
   }
 
   function showMenu(){
+    // Funcion para mostrar el div menu
 
     document.getElementById("menu").style.display = 'block';
     document.getElementById("gameover").style.display = 'none';
@@ -66,6 +80,7 @@ function App() {
   }
 
   function showGameover(){
+    // Funcion para mostrar el div gameover
 
     let puntaje_div = document.getElementById("puntaje_over");
 
@@ -85,6 +100,7 @@ function App() {
   }
 
   function showWin(){
+    // Funcion para mostrar el div win si es que se gana
 
     let puntaje_div = document.getElementById("puntaje_win");
 
@@ -114,6 +130,7 @@ function App() {
   }
 
   function restart(){
+    // Funcion para reiniciar las variables del juego
 
     start = false;
     numb_question = 1;
@@ -132,29 +149,29 @@ function App() {
   }
 
   function jump(){ 
+    // Funcion para saltar al siguiente pregunta
 
     let ing = document.getElementById("ing")
 
     if (ing.classList !== "jump"){
         
-        ing.classList.add("jump");
+      ing.classList.add("jump");
 
-        setTimeout(function(){
+      setTimeout(function(){
 
-            ing.classList.remove("jump");
+        ing.classList.remove("jump");
 
-        }, 500);
+      }, 500);
     }
   
   }
 
   function prefestejo(){ 
+    // Funcion para hacer animacion antes del div win
 
     let personaje = document.getElementById("ing")
 
     document.getElementById("questions").style.display = 'none';
-
-    // personaje.addEventListener("animationend", showWin)
 
     if (personaje.classList !== "prefestejo"){
         
@@ -162,7 +179,9 @@ function App() {
 
         setTimeout(function(){
 
-            personaje.classList.remove("prefestejo");
+          personaje.classList.remove("prefestejo");
+
+          showWin();
 
         }, 1000);
 
@@ -170,6 +189,7 @@ function App() {
   }
 
   function festejo(){ 
+    // Funcion para hacer animacion durante div win
 
     let personaje = document.getElementById("personaje_final")
 
@@ -179,7 +199,7 @@ function App() {
 
         setTimeout(function(){
 
-            personaje.classList.remove("festejo");
+          personaje.classList.remove("festejo");
 
         }, 1500);
     }
@@ -187,22 +207,29 @@ function App() {
   }
 
   function fall(){
+    // Funcion para hacer animacion de caida al morir
       
       let ing = document.getElementById("ing")
   
       if (ing.classList !== "fall"){
           
-          ing.classList.add("fall");
-          setTimeout(function(){
-              ing.classList.remove("fall");
-          }, 500);
+        ing.classList.add("fall");
+
+        setTimeout(function(){
+
+          ing.classList.remove("fall");
+        
+        }, 500);
       }
   
   }
 
   function submit(index, key){
+    // Funcion para validar respuesta
 
-    let current_question = questions_json[index];
+    let question_key = random_keys[index]
+
+    let current_question = questions_json[question_key];
 
     let correct_answer = current_question.answer;
 
@@ -210,45 +237,58 @@ function App() {
       
       if (vidas > 1){
         vidas--;
+        
         document.getElementById("vidas").innerHTML = (`<span> &#10084; </span>`).repeat(vidas);
+        
         fall();
 
       }else{
         fall();
+        
         showGameover();
+
       }
     }else{
 
       puntos = puntos + 1;
+      
       jump();
 
     }
 
     numb_question++;
 
-    if (numb_question <= Object.keys(questions_json).length){
-      showQuestion(numb_question);
-    }else{
-      // console.log(numb_question)
+    if (numb_question < Object.keys(questions_json).length){
       
-      // async prefestejo();
+      showQuestion(numb_question);
 
-      showWin();
+    }else{
+      
+      prefestejo();
+
     }
 
   }
 
   function showQuestion(index){
+    // Funcion para mostrar la pregunta
+
+    let question_key = random_keys[index]
 
     let question_text = document.getElementById("question_text");
     let question_options = document.getElementById("question_options");
 
+    let pgbar = document.getElementById("progressBar");
+
+    pgbar.value = numb_question
     question_text.innerHTML = "";
     question_options.innerHTML = "";
     
-    let current_question = questions_json[index];
+    let current_question = questions_json[question_key];
 
-    let que_tag = '<h3>'+ index + ". " + current_question.question +'</h3>';
+    let num_quest = index + 1
+
+    let que_tag = '<h3>'+ num_quest + ". " + current_question.question +'</h3>';
 
     question_text.innerHTML = que_tag;
 
@@ -284,7 +324,7 @@ function App() {
   return (
 
     <div className="App">
-      
+
       <div className="menu" id="menu">
         
         <div>
@@ -338,15 +378,13 @@ function App() {
 
         <div id="vidas"></div>
 
-        <h2>Preguntas:</h2>
-
         <div id="question_text"></div>
 
         <div id ="question_options"></div>
 
         <div id = "question_timer">
 
-          <progress id="progressBar" value="0" max="10"></progress>
+          <progress id="progressBar" value="0" max = {total}></progress>
 
         </div>
 
