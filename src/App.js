@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 import mujer from './assets/personaje/Female.webp'
 import hombre from './assets/personaje/Male.webp'
 
