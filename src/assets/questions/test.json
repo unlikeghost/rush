@@ -1,0 +1,281 @@
+{
+    "1":{
+        "question": "¿Cómo funciona una RM?",
+        
+        "answers": {
+            "a": "Las ondas de radiación de alta energía que pueden penetrar la mayoría de las sustancias muestran imágenes corporales internas.",
+            "b": "Las ondas de sonido de alta frecuencia producen imágenes de los órganos internos.",
+            "c": "Un campo magnético y ondas radiales de frecuencia muy alta producen imágenes altamente detalladas."
+        },
+
+        "answer": "c"
+    },
+    "2": {
+        "question": "La imagen de RM se crea gracias a reacciones magnéticas del cuerpo del paciente que generan una señal cualificable.",
+
+        "answers": {
+            "a": "Verdadero",
+            "b": "Falso"
+        },
+        "answer": "b"
+    },
+    "3": {
+        "question": "¿Cuánto equivale un Tesla?",
+        "answers": {
+            "a": "1,000 Gauss",
+            "b": "10,000 Gauss",
+            "c": "10 Gauss"
+        },
+        "answer": "a"
+    },
+    "4":{
+        "question": "Un sistema de RM también se puede utilizar durante procedimientos de intervención",
+        "answers": {
+            "a": "Verdadero",
+            "b": "Falso"
+        },
+        "answer": "a"
+    },
+    "5": {
+        "questions": "La distribución del magnetismo dentro de un cuerpo se llama",
+        "answers": {
+            "a": "Magnetización",
+            "b": "Campo magnético"
+        },
+        "answer":"a"
+    },
+    "6":{
+        "question": "¿Qué es un campo homogéneo?",
+        "answers":{
+            "a": "Un campo magnético que posee una intensidad de campo uniforme",
+            "b": "Un campo magnético que no cambia con el tiempo"
+        },
+        "answer": "a"
+    },
+    "7": {
+        "question": "¿De qué partícula subatómica nos interesa el momento magnético para RM?",
+
+        "answers": {
+            "a": "Electrón",
+            "b": "Proton",
+            "c": "Neutrón"
+        },
+
+        "answer": "b"
+    },
+    "8": {
+        "question": "Nombre al total de los espines de protón dentro de un voxel?",
+        "answers": {
+            "a": "Estadístico de magnitud",
+            "b": "Conjunto",
+            "c": "Estadistico de gran magnitud"
+        },
+        "answer": "b"
+    },
+    "9": {
+        "question": "La magnetización en la RM es",
+        "answers": {
+            "a": "Transversal",
+            "b": "Longitudinal",
+            "c": "Frontal"
+        },
+        "answer": "b"
+    },
+    "10": {
+        "question": "La …. de la magnetización es proporcional al número de protones por unidad de volumen",
+        "answers":{
+            "a":"Dirección",
+            "b":"Sentido",
+            "c":"Magnitud"
+        },
+        "answer": "c"
+    },
+    "11":{
+        "question": "A la frecuencia de precesión de los espines también se la llama",
+        "answers":{
+            "a":"Frecuencia de Larmor",
+            "b":"Precesión de Rabi.",
+            "c":"Frecuencia de armor."
+        },
+        "answer": "a"
+    },
+    "12": {
+        "question": "La frecuencia de Larmor en un campo magnético de 3 teslas es de:",
+        "answers": {
+            "a": "64 KHz",
+            "b": "64 MHz",
+            "c": "128 Hz",
+            "d": "128 MHz"
+        },
+        "answer": "d"
+    },
+    "13":{
+        "question": "Los núcleos con un número …. de protones o de neutrones tienen un espín neto, llamado espín nuclear.",
+        "answers":{
+            "a":"Par",
+            "b":"Impar",
+            "c":"Mixto"
+        },
+        "answer": "b"
+    },
+    "14": {
+        "question": "¿Cuál de estos isótopos es adecuado para RM?",
+        "answers": {
+            "a": "Carbono 12",
+            "b": "Carbono 13",
+            "c": "Carbono 14"
+        },
+        "answer": "b"
+    }, 
+    "15": {
+        "question": "Una de las principales ventajas de la resonancia magnética es:",
+        "answers": {
+           "a" : "La facilidad de actualización del equipo",
+           "b" : "Su bajo coste",
+           "c" : "No requiere sala especializada",
+           "d" : "La facilidad de reposicionar la sección transversal sin reposicionar al paciente"
+        },
+        "answer": "d"
+    },
+    "16":{
+        "question": "¿Qué es la magnetización transversal?", 
+        "answers":{
+            "a": "Es el componente del vector que gira alrededor del campo externo",
+            "b": "Es el componente del vector que gira a lo largo del campo interno"
+        },
+        "answer": "a"
+    },
+    "17": {
+        "question": "Una persona con marcapasos puede realizarse una RM",
+        "answers": {
+            "a": "Verdadero",
+            "b": "Falso"
+        },
+        "answer": "b"
+    },
+    "18": {
+        "question": "¿En qué año se realizó la primera RM en humanos?",
+        "answers": {
+            "a": "1952",
+            "b": "1970",
+            "c": "1946",
+            "d": "1972"
+        },
+        "answer": "d"
+    }, 
+    "19":{
+        "question": "Seleccione la opción correcta",
+        "answers":{
+            "a": "Permite detectar edema cerebral, trombosis venosa, placas de desmielinización e infartos cerebrales",
+            "b": "Permite detectar alteraciones tumorales de cualquier tipo y en cualquier órgano",
+            "c": "Todas las opciones son correctas"
+        },
+        "answer": "c"
+    },
+    "20": {
+        "question": "Seleccione un efecto secundario de la RM",
+        "answers": {
+            "a": "Fosfenos",
+            "b": "Dolor de cabeza",
+            "c": "Vértigo",
+            "d": "La segunda y tercera opción son correctas",
+            "e": "Todas las anteriores"
+        },
+        "answer": "d"
+    },
+    "21": {
+        "question": "Cuál de las siguientes no es una ventaja de los escáneres de RM de campo bajo",
+        "answers": {
+            "a": "Mayor relación señal-ruido",
+            "b": "Menores artefactos alrededor de los implantes metálicos",
+            "c": "Mejor homogeneidad del campo magnético"
+        },
+        "answer": "b"
+    },
+    "22":{
+        "question": "Una mala homogeneidad del campo magnético puede afectar a la calidad de la imagen de las siguientes maneras",
+        "answers":{
+            "a": "Artefactos de sombreado",
+            "b": "Distorsión espacial",
+            "c": "Mala supresión de la grasa",
+            "d": "Todas las anteriores"
+        },
+        "answer": "d"
+    },
+    "23":{
+        "question": "¿Cuál de las siguientes afirmaciones sobre la superconductividad es correcta?",
+        "answers":{
+            "a": "Todos los elementos pueden convertirse en superconductores si la temperatura es lo suficientemente baja.",
+            "b": "Sólo los metales pueden convertirse en superconductores.", 
+            "c": "Algunas cerámicas no metálicas también pueden poseer superconductividad."
+        },
+        "answer": "c"
+    },
+    "24": {
+        "question": "Seleccione la opción correcta",
+        "answers":{
+            "a": "El helio liquido es liquido utilizado para enfriamiento",
+            "b": "El nitrógeno liquido es liquido utilizado para enfriamiento",
+            "c": "Ambos líquidos pueden ser utilizados"
+        },
+        "answer": "a"
+    },
+    "25": {
+        "question": "El cambio en la dirección del eje de rotación se conoce como",
+        "answers":{
+            "a": "Momento",
+            "b": "Precesión",
+            "c": "Frecuencia"
+        },
+        "answer": "b"
+    },
+    "26": {
+        "question": "Los núcleos de ciertos átomos tienen una propiedad llamada …. que hace que se comporten como …. en un campo magnético.",
+        "answers":{
+            "a": "quarks, carga diminuta",
+            "b": "quarks, imán diminuto",
+            "c": "espín, carga diminuta",
+            "d": "espín, imán diminuto"
+        },
+        "answer": "d"
+    },
+    "27": {
+        "question": "¿De qué país es capital la ciudad de Viena?",
+        "answers": {
+            "a": "Bulgaria",
+            "b": "Austria",
+            "c": "Alemania",
+            "d": "Francia"
+        },
+        "answer": "b"
+    },
+    "28":{
+        "question": "¿De dónde es el platillo típico llamado Ropa vieja?",
+        "answers": {
+            "a": "De Cuba",
+            "b": "De Francia",
+            "c": "De España",
+            "d": "De Alemania"
+        },
+        "answer": "a"
+    },
+    "29":{
+        "question": "¿Qué religión tiene 613 mandamientos?",
+        "answers":{
+            "a": "Hinduismo",
+            "b": "Buddhismo",
+            "c": "Judaísmo"
+        },
+        "answer": "c"
+    },
+    "30": {
+        "question": "¿Qué color tienen el 75% de las banderas del mundo?",
+        "answers":{
+            "a": "Azul",
+            "b": "Verde",
+            "c": "Rojo",
+            "d": "Amarillo"
+        },
+        "answer": "c"
+    }
+}
