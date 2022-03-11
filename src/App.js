@@ -2,7 +2,7 @@ import './App.css';
 import mujer from './assets/personaje/Female.webp'
 import hombre from './assets/personaje/Male.webp'
 
-const questions_json = require('./assets/questions/test.json');
+const questions_json = require('./assets/questions/questions.json');
 let current = hombre;
 let start = false;
 let vidas = 3;
